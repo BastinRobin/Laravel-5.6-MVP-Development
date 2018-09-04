@@ -3,7 +3,7 @@
 Laravel is a free, open-source PHP web framework which can is considered to be a Fullstack Development framework. Laravel was created by Taylor Otwell on June 2011. Laravel is completely implemented using the MVC pattern principles.
 
 ### How MVC Architecture Works.
-![MVC Request Cycle](images/mvc-in-laravel.png)
+![MVC Request Cycle](mvc-in-laravel.png)
 
 **Model-View-Controller** (MVC) is an architectural pattern that separates an application into three main logical components: the model, the view, and the controller. Each of these components are built to handle specific development aspects of an application. MVC is one of the most frequently used industry-standard web development framework to create scalable and extensible projects.
 
@@ -19,26 +19,26 @@ Controllers act as an interface between Model and View components to process all
 ### Routing
 The most important part of MVC architecture are the routes. Routes are the entry point of MVC applications. In our typical **Core-PHP** when we build websites the structure will be like the project directory will be having a file called index.php  which is considered to be the default page or entry point of the website. Now when we add any pages into the same directory with **.php** extensions we can access those pages using the filename eg: **/index.php, /about.php, /contact.php**. This a simple concept like access a file using browser. But in MVC application we are defining behavior of each URL. We are defining routes and its behaviors in **routes.php** or **web.php**.
 
-![web.php](images/1.png)
+![web.php](1.png)
 
 In the above code you can see we have defined a route when we visit the root url '**/**' thats is **http://example.com** it returns a result **Hello World**. Lets see another example
 
 **web.php**
-![web.php](images/2-about.png)
+![web.php](2-about.png)
 
 **Output**
-![web.php](images/2-about-output.png)
+![web.php](2-about-output.png)
 
 We can see for each page we have defined a route and defined the behavior of each route. Now lets see a wildcard route to with parameters.
 
 **web.php**
-![web.php](images/3.png)
+![web.php](3.png)
 
 **Output**
-![web.php](images/james.png)
+![web.php](james.png)
 
-![web.php](images/mike.png)
+![web.php](mike.png)
 
-![web.php](images/1000.png)
+![web.php](1000.png)
 
 The above route has been defined when ever there is a request to via the URL **/{id}** id refers to a variable it can be anything string, number, boolean. It uses the regular expressions to parse the URL and give us the desired results.
